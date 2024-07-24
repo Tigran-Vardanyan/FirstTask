@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "CharacterBase/CharacterBase.h"
 #include "GameFramework/Character.h"
 #include "Logging/LogMacros.h"
 #include "MyProjectCharacter.generated.h"
@@ -16,7 +17,7 @@ struct FInputActionValue;
 DECLARE_LOG_CATEGORY_EXTERN(LogTemplateCharacter, Log, All);
 
 UCLASS(config=Game)
-class AMyProjectCharacter : public ACharacter
+class AMyProjectCharacter : public ACharacterBase
 {
 	GENERATED_BODY()
 
